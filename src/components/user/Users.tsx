@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import type { User } from "../types";
-import { getAllUsers, deleteUserById } from "../../services/UserService";
 import { useNavigate } from "react-router-dom";
+import { deleteUserById, getAllUsers } from "../../services/userService";
 
 const Users: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);

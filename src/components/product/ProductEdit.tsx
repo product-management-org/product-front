@@ -129,7 +129,7 @@ const ProductEdit: React.FC = () => {
             type="button"
             onClick={handleSubmit}
           >
-            Confirm
+            Save
           </button>
           <button
             className="btn"

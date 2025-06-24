@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getUserById, updateUser } from "../../services/UserService";
 import type { User } from "../types";
+import { getUserById, updateUser } from "../../services/userService";
 
 const UserEdit: React.FC = () => {
   const { id } = useParams();

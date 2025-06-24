@@ -1,8 +1,7 @@
-// src/services/UserService.ts
 import axios from "axios";
 import type { User } from "../components/types";
 
-const API_URL = "http://localhost:8080"; // adjust if needed
+const API_URL = "http://localhost:8080";
 
 export const getAllUsers = async (): Promise<User[]> => {
   const res = await axios.get(`${API_URL}/users`);
